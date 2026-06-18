@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قوانين 1 VS 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <style>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#001f5c,#0039a6);
+    color:white;
+    text-align:center;
+}
+body{
+    background:
+    linear-gradient(rgba(0,20,80,0.75), rgba(0,20,80,0.75)),
+    url("https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1920&auto=format&fit=crop");
+    
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+    color:white;
+}
+header{
+    padding:40px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    color:#ffd700;
+}
+
+.hero img{
+    width:220px;
+    animation: spin 8s linear infinite;
+}
+
+@keyframes spin{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+.rules{
+    max-width:800px;
+    margin:30px auto;
+    padding:20px;
+}
+
+.rule{
+    background:rgba(255,255,255,0.1);
+    margin:15px 0;
+    padding:20px;
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+}
+
+.rule h3{
+    color:#ffd700;
+    margin-bottom:10px;
+}
+
+footer{
+    margin-top:40px;
+    padding:20px;
+    background:rgba(0,0,0,0.3);
+}
+ mark{
+   color:red;
+ }
+  button{
+    background:#FFD700;
+    color:#001f5c;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+  </style>
+
+    <header>
+        <h1>⚽ قوانين بطولة 1 VS 1</h1>
+        <p>بطولة كأس الاتحاد الخربة 2026</p>
+    </header>
+
+    <section class="hero">
+        <img src="https://pngimg.com/uploads/football/football_PNG52797.png" alt="كرة قدم">
+    </section>
+
+    <section class="rules">
+        <h2>القوانين</h2>
+
+        <div class="rule">
+            <h3>1️⃣ مدة المباراة</h3>
+            <p>10 دقائق (5 دقائق لكل شوط).</p>
+        </div>
+
+        <div class="rule">
+            <h3>2️⃣ عدد اللاعبين</h3>
+            <p>لاعب واحد ضد لاعب واحد.</p>
+        </div>
+
+        <div class="rule">
+            <h3>3️⃣ الفوز</h3>
+            <p>الفائز هو صاحب أكبر عدد من الأهداف.</p>
+        </div>
+
+        <div class="rule">
+            <h3>4️⃣ التعادل</h3>
+            <p><mark> في حال انتهاء مباراة بالتعادل سيتم احتساب مجموع الاهداف و تطبيق قانون الاهداف خارج الديار وفي حال ان تعادلوا و نفس الاهداف خارج رح يأهل الى الاشواط الاضافية و ضربات الجزاء</mark></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>©جميع الحقوق محفوظة 2026</p>
+    </footer>
+  <button onclick="goBack()">⬅ رجوع</button>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+
+</body>
+</html>
